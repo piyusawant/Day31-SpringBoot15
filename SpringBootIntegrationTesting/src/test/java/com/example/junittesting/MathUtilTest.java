@@ -1,9 +1,13 @@
 package com.example.junittesting;
 
 import com.example.junittesting.MathUtil;
+import com.example.springbootintegrationtesting.InApplication;
 import org.junit.jupiter.api.*;
+import org.springframework.test.context.ContextConfiguration;
+
 import static org.junit.jupiter.api.Assertions.*;
 
+@ContextConfiguration(classes = InApplication.class)
 public class MathUtilTest
 {
     private MathUtil mathUtil;
